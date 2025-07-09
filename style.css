@@ -2,11 +2,91 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: blanchedalmond;
 }
-h1 {
+
+body {
+  background-color: #faebe0;
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 4rem;
+  line-height: 1.6;
+  padding: 2rem;
+  color: #3a2c1b;
+  letter-spacing: 2px;
+}
+
+.odin-recipes-div {
+  display: block;
+  text-align: center;
+  margin: 50px;
+}
+
+.top-nav {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+.top-nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #3a2c1b;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #b5cda3;
+}
+
+/* Animation keyframes: fade in while sliding up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0; /* start completely invisible */
+    transform: translateY(100px); /* start 100px lower than normal */
+  }
+  100% {
+    opacity: 1; /* end fully visible */
+    transform: translateY(0); /* move back to normal position */
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #8b4513;
+  letter-spacing: 1.2px;
+  transition: filter 0.3s ease;
+  animation: fadeInUp 1s ease-in-out; /* run fadeInUp in 1 second smoothly */
+}
+
+h1:hover {
+  filter: brightness(1.4);
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: #577e51;
+}
+
+/* Paragraphs and Lists */
+p {
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 0 auto 2rem; /*top-right/left-bottom*/
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
